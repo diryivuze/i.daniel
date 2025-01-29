@@ -69,7 +69,7 @@ const AllProjects = () => {
             //   description: "A beginner-friendly mobile app that helps users create, organize, and manage their daily tasks. The app focuses on simplicity and ease of use for anyone looking to stay organized.",
             //   images:  ["../images/art.JPG", "../images/oz.JPG"],
             //   tools: ["Flutter", "Firebase"],
-            //   link: "/all-projects",
+            //   link: "/all",
             // category:"Web",  
             // date: "Not yet",
             //   howItWorks: "Users can add tasks by typing them into a simple input field and mark them as complete by tapping a checkbox. Tasks are stored in Firebase's Firestore, so they can be accessed across multiple devices. With its clean interface and straightforward functionality, the app is perfect for beginners exploring mobile app development."
@@ -79,7 +79,7 @@ const AllProjects = () => {
             //   description: "A lightweight mobile app that displays current weather information for any location. This app is an ideal project for beginners to learn about working with APIs and displaying data dynamically.",
             //   images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
             //   tools: ["Flutter", "OpenWeatherMap API"],
-            //   link: "/all-projects",
+            //   link: "/all",
             // category:"Web",  
             // date: "Not yet",
             //   howItWorks: "The app fetches real-time weather data from the OpenWeatherMap API based on the user's location or input city. It displays details such as temperature, humidity, and weather conditions. The clean interface makes the app user-friendly while helping beginners learn API integration basics."
@@ -89,7 +89,7 @@ const AllProjects = () => {
             //   description: "An advanced mobile app for managing personal finances, including expense tracking, budget creation, and financial insights. Expense Tracker Pro provides analytics tools to help users make informed financial decisions.",
             //   images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
             //   tools: ["Flutter", "Firebase", "Chart.js"],
-            //   link: "/all-projects",
+            //   link: "/all",
             // category:"Web",  
             // date: "Not yet",
             //   howItWorks: "Users can log income and expenses with categories such as food, transport, and entertainment. The app visualizes financial data using dynamic charts powered by Chart.js and provides monthly reports. Firebase ensures secure storage and multi-device syncing. Advanced features include setting financial goals and receiving insights to adjust spending habits."
@@ -99,7 +99,7 @@ const AllProjects = () => {
             //   description: "An advanced mobile app for real-time messaging and social networking. SocialConnect offers features like text and multimedia messaging, profile creation, and group chats.",
             //   images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
             //   tools: ["Flutter", "Firebase", "Cloud Functions"],
-            //   link: "/all-projects",
+            //   link: "/all",
             // category:"Web",  
             // date: "Not yet",
             //   howItWorks: "Users can create profiles and connect with friends for one-on-one or group chats. Messages are stored securely using Firebase Firestore, and Cloud Functions handle tasks like notifications and data updates. The app supports image, video, and audio sharing, along with read receipts and typing indicators, providing a complete messaging experience."
@@ -109,7 +109,7 @@ const AllProjects = () => {
             //   description: "A mobile app designed for creating, sharing, and participating in quizzes. Quiz Master is perfect for students, teachers, and anyone who loves trivia, offering both solo and multiplayer modes.",
             //   images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
             //   tools: ["Flutter", "Firebase", "Cloud Functions"],
-            //   link: "/all-projects",
+            //   link: "/all",
             // category:"Web",  
             // date: "Not yet",
             //   howItWorks: "Users can create custom quizzes by selecting categories, adding questions, and setting time limits. Players can join quizzes in real-time multiplayer mode or challenge themselves in solo mode. Firebase is used to manage quiz data, store scores, and enable real-time multiplayer functionality. The app also features leaderboards to track top performers and encourage competition."
