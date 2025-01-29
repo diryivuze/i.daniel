@@ -4,17 +4,107 @@ import { ExternalLink, GitBranch } from 'lucide-react';
 
 const AllProjects = () => {
     const allProjects = [
-      {
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with React and Node.js",
-        images: ["/api/placeholder/400/300", "/api/placeholder/400/301"],
-        tools: ["React", "Node.js", "MongoDB"],
-        date: "January 2023",
-        link: "#",
-        howItWorks: "The platform allows users to browse products, add them to the cart, and checkout with a secure payment gateway."
-      },
+            {
+            title: "OAK Investments Limited",
+            description: "OAK Investments Limited is a Rwandan service provider dedicated to promoting environmental sustainability.",
+            tools: ["React JS", "Tailwind CSS", "FastAPI"],
+            images: [ ["/api/placeholder/400/300", "/api/placeholder/400/301"], "/api/placeholder/400/301"],
+            link: "https://oak-not-paid.netlify.app/",
+            date: "March 2024",
+            howItWorks: "OAK Investments Limited's website provides a user-friendly interface where customers can explore various sustainable energy solutions. Users can browse products like stoves and briquettes, learn about their environmental benefits, and make purchases directly through the website. The site also offers an educational section that explains the importance of reducing carbon footprints and how each product contributes to a cleaner and healthier environment. The company also provides installation services for the products, ensuring seamless adoption of their energy-saving solutions."
+            },
+            {
+            title: "Artistry Hub Rwanda",
+            description: "Artistry Hub Rwanda is a digital marketplace and platform designed to promote and support Rwandan artists.",
+            tools: ["React JS", "Tailwind CSS", "Django"],
+            images: [ ["/api/placeholder/400/300", "/api/placeholder/400/301"], "/api/placeholder/400/301"],
+            link: "https://oak-not-paid.netlify.app/",
+            date: "March 2024",
+            howItWorks: "Artistry Hub Rwanda allows artists to register and create detailed profiles showcasing their artwork. The platform offers various categories for different types of art, such as painting, sculpture, photography, and more. Artists can upload images of their work, set prices, and manage sales through an integrated payment gateway. Buyers can explore a wide range of artworks, view artist portfolios, and purchase directly from the platform. The site also hosts virtual exhibitions, artist spotlights, and art-related events to engage the local and global community."
+            },
+            {
+            title: "B&D Cars",
+            description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
+            tools: ["React JS", "Tailwind CSS", "Django"],
+            images: ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+            link: "https://bdcars.netlify.app/",
+            date: "March 2024",
+            howItWorks: "B&D Cars' website functions as a digital showroom, where customers can browse through a catalog of cars available for purchase. Each car listing includes detailed information such as model, price, specifications, photos, and features. Buyers can filter the listings by price range, car type, and other preferences to find their ideal vehicle. The site also provides a contact form for inquiries and scheduling test drives. Once a purchase is made, customers can arrange financing, and B&D Cars offers post-purchase services, including maintenance and warranties."
+            },
+            {
+            title: "Confi Store",
+            description: "Confi Store is an online platform that provides a wide selection of educational resources, including books, e-books, and online courses.",
+            tools: ["React JS", "Tailwind CSS", "Django"],
+            images: ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+            link: "https://confistore.netlify.app/",
+            date: "May 2024",
+            howItWorks: "Confi Store offers a convenient online library where users can browse and purchase a wide range of educational materials. Books and courses are categorized by subject, making it easy for users to find relevant content for their studies or personal growth. Once a user selects an item, they can either download it or access it online. The platform supports various learning formats, including textbooks, e-books, video lectures, and interactive materials. Users can also leave reviews and ratings for the resources they purchase, helping others to find the best content."
+            },
+            {
+            title: "IgaThrive Platform",
+            description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
+            tools: ["React JS", "Tailwind CSS", "Flask"],
+            images: ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+            link: "https://igathrive.netlify.app/",
+            date: "May 2024",
+            howItWorks: "IgaThrive connects students to various online courses offered by local and international institutions. Students can create profiles, enroll in courses, access learning materials, and track their academic performance. The platform also integrates a school management system that allows administrators to manage student data, grades, and schedules. Teachers can upload course content, grade assignments, and communicate with students through the platform. The system's user-friendly interface ensures that both students and educators can navigate the platform easily."
+            },
+            {
+            title: "Ozone Inventory System",
+            description: "Ozone Inventory System is a comprehensive tool for businesses to manage their inventory efficiently. ",
+            tools: ["React JS", "Tailwind CSS", "FastAPI"],
+            images: ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+            link: "https://ozoneinventorysystem.netlify.app/",
+            date: "May 2024",
+            howItWorks: "Ozone Inventory System helps businesses maintain accurate records of their inventory. Users can log each item with details such as quantity, price, and supplier information. The system automatically updates stock levels as sales or purchases are made, providing real-time insights into inventory status. Businesses can generate custom reports to analyze stock trends, sales, and supplier performance. The platform also supports inventory alerts, ensuring that businesses are notified when stock levels are running low, reducing the risk of running out of critical items."
+            },
+            {
+              title: "Simple To-Do List",
+              description: "A beginner-friendly mobile app that helps users create, organize, and manage their daily tasks. The app focuses on simplicity and ease of use for anyone looking to stay organized.",
+              images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+              tools: ["Flutter", "Firebase"],
+              link: "/all-projects",
+              date: "Not yet",
+              howItWorks: "Users can add tasks by typing them into a simple input field and mark them as complete by tapping a checkbox. Tasks are stored in Firebase's Firestore, so they can be accessed across multiple devices. With its clean interface and straightforward functionality, the app is perfect for beginners exploring mobile app development."
+            },
+            {
+              title: "Weather Info App",
+              description: "A lightweight mobile app that displays current weather information for any location. This app is an ideal project for beginners to learn about working with APIs and displaying data dynamically.",
+              images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+              tools: ["Flutter", "OpenWeatherMap API"],
+              link: "/all-projects",
+              date: "Not yet",
+              howItWorks: "The app fetches real-time weather data from the OpenWeatherMap API based on the user's location or input city. It displays details such as temperature, humidity, and weather conditions. The clean interface makes the app user-friendly while helping beginners learn API integration basics."
+            },
+            {
+              title: "Expense Tracker Pro",
+              description: "An advanced mobile app for managing personal finances, including expense tracking, budget creation, and financial insights. Expense Tracker Pro provides analytics tools to help users make informed financial decisions.",
+              images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+              tools: ["Flutter", "Firebase", "Chart.js"],
+              link: "/all-projects",
+              date: "Not yet",
+              howItWorks: "Users can log income and expenses with categories such as food, transport, and entertainment. The app visualizes financial data using dynamic charts powered by Chart.js and provides monthly reports. Firebase ensures secure storage and multi-device syncing. Advanced features include setting financial goals and receiving insights to adjust spending habits."
+            },
+            {
+              title: "SocialConnect - Messaging Platform",
+              description: "An advanced mobile app for real-time messaging and social networking. SocialConnect offers features like text and multimedia messaging, profile creation, and group chats.",
+              images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+              tools: ["Flutter", "Firebase", "Cloud Functions"],
+              link: "/all-projects",
+              date: "Not yet",
+              howItWorks: "Users can create profiles and connect with friends for one-on-one or group chats. Messages are stored securely using Firebase Firestore, and Cloud Functions handle tasks like notifications and data updates. The app supports image, video, and audio sharing, along with read receipts and typing indicators, providing a complete messaging experience."
+            },
+            {
+              title: "Quiz Master App",
+              description: "A mobile app designed for creating, sharing, and participating in quizzes. Quiz Master is perfect for students, teachers, and anyone who loves trivia, offering both solo and multiplayer modes.",
+              images:  ["/api/placeholder/400/300", "/api/placeholder/400/301"],
+              tools: ["Flutter", "Firebase", "Cloud Functions"],
+              link: "/all-projects",
+              date: "Not yet",
+              howItWorks: "Users can create custom quizzes by selecting categories, adding questions, and setting time limits. Players can join quizzes in real-time multiplayer mode or challenge themselves in solo mode. Firebase is used to manage quiz data, store scores, and enable real-time multiplayer functionality. The app also features leaderboards to track top performers and encourage competition."
+            }
     ];
-  
+
     return (
       <div className="min-h-screen bg-gray-50 text-gray-900 mt-16 p-4 sm:p-8">
         <div className="max-w-7xl mx-auto">

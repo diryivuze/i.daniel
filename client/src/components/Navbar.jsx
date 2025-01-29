@@ -1,75 +1,105 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Camera, Home, Briefcase, FolderKanban, Mail, Menu, X } from 'lucide-react';
 import { Link } from "react-router-dom";
-import { FaHome, FaBriefcase, FaProjectDiagram, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [activeSection, setActiveSection] = useState('/');
 
   const navLinks = [
-    { to: "/", icon: FaHome, label: "Home" },
-    { to: "/experience", icon: FaBriefcase, label: "Experience" },
-    { to: "/projects", icon: FaProjectDiagram, label: "Projects" },
-    { to: "/contact", icon: FaEnvelope, label: "Contact" }
+    { to: "/", icon: Home, label: "Home" },
+    { to: "/experience", icon: Briefcase, label: "Experience" },
+    { to: "/projects", icon: FolderKanban, label: "Projects" },
+    { to: "/contact", icon: Mail, label: "Contact" }
   ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // Handle scroll behavior
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+
+      setPrevScrollPos(currentScrollPos);
+      setVisible(visible);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
 
   return (
-    <nav className="bg-orange-900 text-white p-4 shadow-md fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-xl font-bold">
-          <a href="/" className="transition-transform duration-300 hover:scale-105">
-            Daniel Iryivuze
-          </a>
-        </div>
+    <nav 
+      className={`fixed w-full transition-all duration-300 ease-in-out ${
+        visible ? 'top-0' : '-top-20'
+      } left-0 right-0 z-50 bg-orange-900 text-white shadow-lg`}
+    >
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <a href='/'>
 
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
-          <button 
-            onClick={toggleMenu} 
-            className="focus:outline-none transition-transform duration-300 hover:scale-110"
+             <img src='../images/logowhite.png' className='w-full h-24 transition-colors duration-300 '/>
+            </a>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`flex items-center space-x-2 px-3 py-2 rounded-md transition-all duration-300 ${
+                  activeSection === link.to 
+                    ? 'bg-orange-800 text-white' 
+                    : 'hover:bg-orange-800/50'
+                }`}
+                onClick={() => setActiveSection(link.to)}
+              >
+                <link.icon className="h-5 w-5" />
+                <span>{link.label}</span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 rounded-md hover:bg-orange-800 transition-colors duration-300"
           >
-            {isMenuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
-        {/* Desktop Navigation */}
-        <ul className="hidden md:flex space-x-8 items-center">
-          {navLinks.map((link) => (
-            <li key={link.to} className="group">
-              <Link 
-                to={link.to} 
-                className="flex items-center space-x-2 hover:text-gray-200 transition-colors duration-300"
+        {/* Mobile Navigation */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          } overflow-hidden`}
+        >
+          <div className="py-2 space-y-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={`w-full flex items-center space-x-2 px-4 py-2 rounded-md transition-all duration-300 ${
+                  activeSection === link.to 
+                    ? 'bg-orange-800 text-white' 
+                    : 'hover:bg-orange-800/50'
+                }`}
+                onClick={() => {
+                  setActiveSection(link.to);
+                  setIsMenuOpen(false);
+                }}
               >
-                <link.icon className="text-lg group-hover:animate-bounce" />
+                <link.icon className="h-5 w-5" />
                 <span>{link.label}</span>
               </Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-orange-900 shadow-lg">
-            <ul className="flex flex-col  space-y-4 py-4">
-              {navLinks.map((link) => (
-                <li key={link.to} className="group w-full text-center">
-                  <Link 
-                    to={link.to} 
-                    className="flex justify-center  space-x-2 hover:text-gray-200 transition-colors duration-300 py-2"
-                    onClick={toggleMenu}
-                  >
-                    <link.icon className="text-lg group-hover:animate-bounce" />
-                    <span>{link.label}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            ))}
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );

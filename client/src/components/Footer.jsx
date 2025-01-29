@@ -24,7 +24,7 @@ const Footer = () => {
             Daniel Iryivuze
           </h3>
           <p className="text-sm mb-2">&copy; {new Date().getFullYear()} All rights reserved.</p>
-          <p className="text-sm">Designed and built by Daniel Iryivuze</p>
+          <p className="text-sm">Designed and built by diryivuze</p>
         </div>
 
         {/* Newsletter Subscription */}
@@ -93,7 +93,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-8 text-center text-sm opacity-75 animate-pulse">
-        <p>Powered by React | Built with passion</p>
+        <p>Built with passion | By Daniel Iryivuze</p>
       </div>
     </footer>
   );

@@ -68,20 +68,16 @@ const Experience = () => {
   };
 
   const certifications = [
-    {
-      title: "AI Career Essentials Program (AICE)",
-      provider: "ALX Rwanda",
-      year: "2024"
-    },
+   
     {
       title: "Data Science & Data Engineering Training",
       provider: "ICT Chamber in partnership with Talent 4 Startups",
       year: "2024"
     },
     {
-      title: "Certified ScrumMaster (CSM)",
-      provider: "Scrum Alliance",
-      year: "2021"
+      title: "AI Career Essentials Program (AICE)",
+      provider: "ALX Rwanda",
+      year: "2024"
     }
   ];
 
