@@ -232,7 +232,7 @@ const Projects = () => {
           </div>
         ) : (
           <div className="text-center text-gray-600 text-lg sm:text-xl">
-            Progressing
+            Nothing is matching to your search
           </div>
         )}
 
