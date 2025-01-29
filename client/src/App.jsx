@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Allprojects from "./pages/Allprojects";
 
