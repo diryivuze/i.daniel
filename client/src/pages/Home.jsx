@@ -56,7 +56,7 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 flex flex-col justify-center items-center text-center z-10 px-4"
+          className="absolute inset-0 flex flex-col justify-center items-center text-center bg-gray-950/70 z-10 px-4"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 tracking-wide">
             Hi, I'm Daniel Iryivuze
