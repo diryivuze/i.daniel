@@ -14,7 +14,7 @@ const Projects = () => {
       {
         title: "OAK Investments Limited",
         description: "OAK Investments Limited is a Rwandan service provider dedicated to promoting environmental sustainability.",
-        images: "OAK website image link",
+        images: "../images/oaks.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
         link: "/all-projects",
         date: "January 2025",
@@ -22,7 +22,7 @@ const Projects = () => {
       {
         title: "Artistry Hub Rwanda",
         description: "Artistry Hub Rwanda is a digital marketplace and platform designed to promote and support Rwandan artists.",
-        images: "OAK website image link",
+        images: "../images/art.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
         link: "/all-projects",
         date: "December 2024",
@@ -30,7 +30,7 @@ const Projects = () => {
       {
         title: "B&D Cars",
         description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
-        images: "B&D cars website image link",
+        images: "../images/bd.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
         link: "/all-projects",
         date: "December 2024",
@@ -38,7 +38,7 @@ const Projects = () => {
       {
         title: "Confi Store",
         description: "Confi Store is an online platform that provides a wide selection of educational resources, including books, e-books, and online courses.",
-        images: "confi store website image link",
+        images: "../images/confi.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
         link: "/all-projects",
         date: "December 2024",
@@ -46,7 +46,7 @@ const Projects = () => {
       {
         title: "IgaThrive Platform",
         description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
-        images: "Igathrive website image link",
+        images: "../images/iga.JPG",
         tools: ["React JS", "Tailwind CSS", "Flask"],
         link: "/all-projects",
         date: "November 2024",
@@ -54,7 +54,7 @@ const Projects = () => {
       {
         title: "Ozone Inventory System",
         description: "Ozone Inventory System is a comprehensive tool for businesses to manage their inventory efficiently. ",
-        images: "ozone website images link",
+        images: "../images/oz.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
         link: "/all-projects",
         date: "Ocyober 2024",
@@ -232,7 +232,7 @@ const Projects = () => {
           </div>
         ) : (
           <div className="text-center text-gray-600 text-lg sm:text-xl">
-            In progress
+            Progressing
           </div>
         )}
 
