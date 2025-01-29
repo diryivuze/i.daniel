@@ -8,7 +8,7 @@ const AllProjects = () => {
             title: "OAK Investments Limited",
             description: "OAK Investments Limited is a Rwandan service provider dedicated to promoting environmental sustainability.",
             tools: ["React JS", "Tailwind CSS", "FastAPI"],
-            images: ["../images/oaks.JPG", "../images/oaks1.JPG"],
+            images: ["../images/oaks1.JPG", "../images/oaks.JPG"],
             link: "https://oak-not-paid.netlify.app/",
             date: "March 2024",
             howItWorks: "OAK Investments Limited's website provides a user-friendly interface where customers can explore various sustainable energy solutions. Users can browse products like stoves and briquettes, learn about their environmental benefits, and make purchases directly through the website. The site also offers an educational section that explains the importance of reducing carbon footprints and how each product contributes to a cleaner and healthier environment. The company also provides installation services for the products, ensuring seamless adoption of their energy-saving solutions."
@@ -26,7 +26,7 @@ const AllProjects = () => {
             title: "B&D Cars",
             description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
             tools: ["React JS", "Tailwind CSS", "Django"],
-            images: ["../images/bd2.JPG", "../images/bd1.JPG"],
+            images: ["../images/bd.JPG", "../images/bd1.JPG"],
             link: "https://bdcars.netlify.app/",
             date: "March 2024",
             howItWorks: "B&D Cars' website functions as a digital showroom, where customers can browse through a catalog of cars available for purchase. Each car listing includes detailed information such as model, price, specifications, photos, and features. Buyers can filter the listings by price range, car type, and other preferences to find their ideal vehicle. The site also provides a contact form for inquiries and scheduling test drives. Once a purchase is made, customers can arrange financing, and B&D Cars offers post-purchase services, including maintenance and warranties."
@@ -35,7 +35,7 @@ const AllProjects = () => {
             title: "Confi Store",
             description: "Confi Store is an online platform that provides a wide selection of educational resources, including books, e-books, and online courses.",
             tools: ["React JS", "Tailwind CSS", "Django"],
-            images: ["../images/confi.JPG", "../images/confi1.JPG"],
+            images: ["../images/confi1.JPG", "../images/confi.JPG"],
             link: "https://confistore.netlify.app/",
             date: "May 2024",
             howItWorks: "Confi Store offers a convenient online library where users can browse and purchase a wide range of educational materials. Books and courses are categorized by subject, making it easy for users to find relevant content for their studies or personal growth. Once a user selects an item, they can either download it or access it online. The platform supports various learning formats, including textbooks, e-books, video lectures, and interactive materials. Users can also leave reviews and ratings for the resources they purchase, helping others to find the best content."
@@ -44,7 +44,7 @@ const AllProjects = () => {
             title: "IgaThrive Platform",
             description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
             tools: ["React JS", "Tailwind CSS", "Flask"],
-            images: ["../images/iga.JPG", "../images/iga3.JPG"],
+            images: ["../images/iga1.JPG", "../images/iga3.JPG"],
             link: "https://igathrive.netlify.app/",
             date: "May 2024",
             howItWorks: "IgaThrive connects students to various online courses offered by local and international institutions. Students can create profiles, enroll in courses, access learning materials, and track their academic performance. The platform also integrates a school management system that allows administrators to manage student data, grades, and schedules. Teachers can upload course content, grade assignments, and communicate with students through the platform. The system's user-friendly interface ensures that both students and educators can navigate the platform easily."
