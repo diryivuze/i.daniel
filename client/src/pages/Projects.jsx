@@ -16,7 +16,7 @@ const Projects = () => {
         description: "OAK Investments Limited is a Rwandan service provider dedicated to promoting environmental sustainability.",
         images: "../images/oaks.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all-projects",
+        link: "/all",
         date: "January 2025",
       },
       {
@@ -24,7 +24,7 @@ const Projects = () => {
         description: "Artistry Hub Rwanda is a digital marketplace and platform designed to promote and support Rwandan artists.",
         images: "../images/art.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
-        link: "/all-projects",
+        link: "/all",
         date: "December 2024",
       },
       {
@@ -32,7 +32,7 @@ const Projects = () => {
         description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
         images: "../images/bd.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
-        link: "/all-projects",
+        link: "/all",
         date: "December 2024",
       },
       {
@@ -40,7 +40,7 @@ const Projects = () => {
         description: "Confi Store is an online platform that provides a wide selection of educational resources, including books, e-books, and online courses.",
         images: "../images/confi.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all-projects",
+        link: "/all",
         date: "December 2024",
       },
       {
@@ -48,7 +48,7 @@ const Projects = () => {
         description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
         images: "../images/iga.JPG",
         tools: ["React JS", "Tailwind CSS", "Flask"],
-        link: "/all-projects",
+        link: "/all",
         date: "November 2024",
       },
       {
@@ -56,7 +56,7 @@ const Projects = () => {
         description: "Ozone Inventory System is a comprehensive tool for businesses to manage their inventory efficiently. ",
         images: "../images/oz.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all-projects",
+        link: "/all",
         date: "Ocyober 2024",
       }
     ],
@@ -66,7 +66,7 @@ const Projects = () => {
       //   description: "A beginner-friendly mobile app that helps users create, organize, and manage their daily tasks. The app focuses on simplicity and ease of use for anyone looking to stay organized.",
       //   images: "/api/placeholder/400/300",
       //   tools: ["Flutter", "Firebase"],
-      //   link: "/all-projects",
+      //   link: "/all",
       //   date: "Not yet",
       //   Howitworks: "Users can add tasks by typing them into a simple input field and mark them as complete by tapping a checkbox. Tasks are stored in Firebase's Firestore, so they can be accessed across multiple devices. With its clean interface and straightforward functionality, the app is perfect for beginners exploring mobile app development."
       // },
@@ -75,7 +75,7 @@ const Projects = () => {
       //   description: "A lightweight mobile app that displays current weather information for any location. This app is an ideal project for beginners to learn about working with APIs and displaying data dynamically.",
       //   images: "/api/placeholder/400/300",
       //   tools: ["Flutter", "OpenWeatherMap API"],
-      //   link: "/all-projects",
+      //   link: "/all",
       //   date: "Not yet",
       //   Howitworks: "The app fetches real-time weather data from the OpenWeatherMap API based on the user's location or input city. It displays details such as temperature, humidity, and weather conditions. The clean interface makes the app user-friendly while helping beginners learn API integration basics."
       // },
@@ -84,7 +84,7 @@ const Projects = () => {
       //   description: "An advanced mobile app for managing personal finances, including expense tracking, budget creation, and financial insights. Expense Tracker Pro provides analytics tools to help users make informed financial decisions.",
       //   images: "/api/placeholder/400/300",
       //   tools: ["Flutter", "Firebase", "Chart.js"],
-      //   link: "/all-projects",
+      //   link: "/all",
       //   date: "Not yet",
       //   Howitworks: "Users can log income and expenses with categories such as food, transport, and entertainment. The app visualizes financial data using dynamic charts powered by Chart.js and provides monthly reports. Firebase ensures secure storage and multi-device syncing. Advanced features include setting financial goals and receiving insights to adjust spending habits."
       // },
@@ -93,7 +93,7 @@ const Projects = () => {
       //   description: "An advanced mobile app for real-time messaging and social networking. SocialConnect offers features like text and multimedia messaging, profile creation, and group chats.",
       //   images: "/api/placeholder/400/300",
       //   tools: ["Flutter", "Firebase", "Cloud Functions"],
-      //   link: "/all-projects",
+      //   link: "/all",
       //   date: "Not yet",
       //   Howitworks: "Users can create profiles and connect with friends for one-on-one or group chats. Messages are stored securely using Firebase Firestore, and Cloud Functions handle tasks like notifications and data updates. The app supports image, video, and audio sharing, along with read receipts and typing indicators, providing a complete messaging experience."
       // },
@@ -102,7 +102,7 @@ const Projects = () => {
       //   description: "A mobile app designed for creating, sharing, and participating in quizzes. Quiz Master is perfect for students, teachers, and anyone who loves trivia, offering both solo and multiplayer modes.",
       //   images: "/api/placeholder/400/300",
       //   tools: ["Flutter", "Firebase", "Cloud Functions"],
-      //   link: "/all-projects",
+      //   link: "/all",
       //   date: "Not yet",
       //   Howitworks: "Users can create custom quizzes by selecting categories, adding questions, and setting time limits. Players can join quizzes in real-time multiplayer mode or challenge themselves in solo mode. Firebase is used to manage quiz data, store scores, and enable real-time multiplayer functionality. The app also features leaderboards to track top performers and encourage competition."
       // }
@@ -113,7 +113,7 @@ const Projects = () => {
       //   "description": "Complete brand identity package for a startup, including logo design, color palette, typography, and brand guidelines to ensure consistent communication across all platforms.",
       //   "images": "/api/placeholder/400/300",
       //   "tools": ["Figma", "Photoshop"],
-      //   "link": "/all-projects",
+      //   "link": "/all",
       //   "date": "February 2023"
       // },
       // {
@@ -121,7 +121,7 @@ const Projects = () => {
       //   "description": "A beginner project for designing a simple mobile app interface, including wireframes, basic prototyping, and user flow diagrams.",
       //   "images": "/api/placeholder/400/300",
       //   "tools": ["Figma", "Adobe XD"],
-      //   "link": "/all-projects",
+      //   "link": "/all",
       //   "date": "March 2023"
       // },
       // {
@@ -129,7 +129,7 @@ const Projects = () => {
       //   "description": "A UI/UX design project for creating an attractive and functional landing page layout, focusing on responsive design and usability.",
       //   "images": "/api/placeholder/400/300",
       //   "tools": ["Figma", "Sketch"],
-      //   "link": "/all-projects",
+      //   "link": "/all",
       //   "date": "April 2023"
       // },
       // {
@@ -137,7 +137,7 @@ const Projects = () => {
       //   "description": "An advanced project to design a full e-commerce website interface, including homepage, product pages, and checkout flows. The focus is on user experience and accessibility.",
       //   "images": "/api/placeholder/400/300",
       //   "tools": ["Figma", "Adobe XD", "Photoshop"],
-      //   "link": "/all-projects",
+      //   "link": "/all",
       //   "date": "May 2023"
       // },
       // {
@@ -145,7 +145,7 @@ const Projects = () => {
       //   "description": "An advanced project involving the creation of a data dashboard interface for business analytics, featuring charts, graphs, and interactive filters.",
       //   "images": "/api/placeholder/400/300",
       //   "tools": ["Figma", "Tableau", "Illustrator"],
-      //   "link": "/all-projects",
+      //   "link": "/all",
       //   "date": "June 2023"
       // }
     ]
@@ -239,7 +239,7 @@ const Projects = () => {
         {/* View All Projects Link */}
         <div className="mt-8 sm:mt-12 text-center">
           <a
-            href="/all-projects"
+            href="/all"
             className="px-4 sm:px-6 py-2 sm:py-3 bg-orange-900 text-white rounded-lg font-medium hover:bg-orange-800 transition text-sm sm:text-base flex items-center justify-center mx-auto w-fit"
           >
             View All Projects
