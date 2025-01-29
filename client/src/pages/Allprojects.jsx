@@ -26,7 +26,7 @@ const AllProjects = () => {
             title: "B&D Cars",
             description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
             tools: ["React JS", "Tailwind CSS", "Django"],
-            images: ["../images/bd.JPG", "../images/bd1.JPG"],
+            images: ["../images/bd.JPG", "../images/bd.JPG"],
             link: "https://bdcars.netlify.app/",
             date: "March 2024",
             howItWorks: "B&D Cars' website functions as a digital showroom, where customers can browse through a catalog of cars available for purchase. Each car listing includes detailed information such as model, price, specifications, photos, and features. Buyers can filter the listings by price range, car type, and other preferences to find their ideal vehicle. The site also provides a contact form for inquiries and scheduling test drives. Once a purchase is made, customers can arrange financing, and B&D Cars offers post-purchase services, including maintenance and warranties."
@@ -44,7 +44,7 @@ const AllProjects = () => {
             title: "IgaThrive Platform",
             description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
             tools: ["React JS", "Tailwind CSS", "Flask"],
-            images: ["../images/iga1.JPG", "../images/iga3.JPG"],
+            images: ["../images/iga.JPG", "../images/iga.JPG"],
             link: "https://igathrive.netlify.app/",
             date: "May 2024",
             howItWorks: "IgaThrive connects students to various online courses offered by local and international institutions. Students can create profiles, enroll in courses, access learning materials, and track their academic performance. The platform also integrates a school management system that allows administrators to manage student data, grades, and schedules. Teachers can upload course content, grade assignments, and communicate with students through the platform. The system's user-friendly interface ensures that both students and educators can navigate the platform easily."
@@ -53,7 +53,7 @@ const AllProjects = () => {
             title: "Ozone Inventory System",
             description: "Ozone Inventory System is a comprehensive tool for businesses to manage their inventory efficiently. ",
             tools: ["React JS", "Tailwind CSS", "FastAPI"],
-            images: ["../images/oz.JPG", "../images/oz1.JPG"],
+            images: ["../images/oz1.JPG", "../images/oz.JPG"],
             link: "https://ozoneinventorysystem.netlify.app/",
             date: "May 2024",
             howItWorks: "Ozone Inventory System helps businesses maintain accurate records of their inventory. Users can log each item with details such as quantity, price, and supplier information. The system automatically updates stock levels as sales or purchases are made, providing real-time insights into inventory status. Businesses can generate custom reports to analyze stock trends, sales, and supplier performance. The platform also supports inventory alerts, ensuring that businesses are notified when stock levels are running low, reducing the risk of running out of critical items."
@@ -120,13 +120,13 @@ const AllProjects = () => {
               className="flex flex-col lg:flex-row gap-6 sm:gap-8 mb-12 sm:mb-16 bg-white rounded-xl shadow-md overflow-hidden"
             >
               <div className="lg:w-1/2">
-                <div className="relative w-full h-48 sm:h-64 overflow-hidden">
+                <div className="relative w-full h-full sm:h-full overflow-hidden">
                   {project.images.map((images, i) => (
                     <motion.img
                       key={i}
                       src={images}
                       alt={`Slide ${i}`}
-                      className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ${i === 0 ? 'opacity-100' : 'opacity-0'}`}
+                      className={`absolute top-0 left-0 max-w-full h-auto object-cover transition-opacity duration-700 ${i === 0 ? 'opacity-100' : 'opacity-0'}`}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
