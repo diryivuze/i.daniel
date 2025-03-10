@@ -24,7 +24,7 @@ const Projects = () => {
         description: "Artistry Hub Rwanda is a digital marketplace and platform designed to promote and support Rwandan artists.",
         images: "../images/art.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
-        https://artistryhubrwanda.netlify.app/
+          link:" https://artistryhubrwanda.netlify.app/",
         date: "December 2024",
       },
       {
