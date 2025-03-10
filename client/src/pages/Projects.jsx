@@ -16,7 +16,7 @@ const Projects = () => {
         description: "OAK Investments Limited is a Rwandan service provider dedicated to promoting environmental sustainability.",
         images: "../images/oaks.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all",
+         link: "https://oak-not-paid.netlify.app/",
         date: "January 2025",
       },
       {
@@ -24,7 +24,7 @@ const Projects = () => {
         description: "Artistry Hub Rwanda is a digital marketplace and platform designed to promote and support Rwandan artists.",
         images: "../images/art.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
-        link: "/all",
+        https://artistryhubrwanda.netlify.app/
         date: "December 2024",
       },
       {
@@ -32,7 +32,7 @@ const Projects = () => {
         description: "B&D Cars is a leading Rwandan dealership that specializes in selling new and used cars.",
         images: "../images/bd.JPG",
         tools: ["React JS", "Tailwind CSS", "Django"],
-        link: "/all",
+        link: "https://bdcars.netlify.app/",
         date: "December 2024",
       },
       {
@@ -40,7 +40,7 @@ const Projects = () => {
         description: "Confi Store is an online platform that provides a wide selection of educational resources, including books, e-books, and online courses.",
         images: "../images/confi.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all",
+        link: "https://confistore.netlify.app/",
         date: "December 2024",
       },
       {
@@ -48,7 +48,7 @@ const Projects = () => {
         description: "IgaThrive is an innovative EduTech platform designed to enhance the learning experience for students in Rwanda and beyond. ",
         images: "../images/iga.JPG",
         tools: ["React JS", "Tailwind CSS", "Flask"],
-        link: "/all",
+        link: "https://igathrive.netlify.app/",
         date: "November 2024",
       },
       {
@@ -56,8 +56,8 @@ const Projects = () => {
         description: "Ozone Inventory System is a comprehensive tool for businesses to manage their inventory efficiently. ",
         images: "../images/oz.JPG",
         tools: ["React JS", "Tailwind CSS", "FastAPI"],
-        link: "/all",
-        date: "Ocyober 2024",
+        link: "https://ozoneinventorysystem.netlify.app/",
+        date: "October 2024",
       }
     ],
     mobile: [
